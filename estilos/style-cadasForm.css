@@ -126,7 +126,7 @@ section{
 }
 
 
-button{
+.Finalizar button{
 
     padding: 15px;
     font-size: 0.9em;
@@ -139,13 +139,13 @@ button{
     background: #ffffff93;
 }
 
-button a{
+.Finalizar button a{
     text-decoration: none;
     color: #0099ff;
     font-weight: bolder;
 }
 
-button:hover{
+.Finalizar button:hover{
     background-color: #badef77a;
     transition: 0.4s;
     font-weight: bolder;
