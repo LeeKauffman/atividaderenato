@@ -204,7 +204,8 @@
    }
    .profile-info{
     margin-bottom: 20%;
-}
+    }
+
 
     #perfil{
         font-size: 18px;
@@ -215,6 +216,100 @@
     #photo-perfil{
         padding-bottom: 20px;
         margin-left: 10px;
+    }
+    .wrapper {
+      text-align: center;
+      margin: 20px;
+    }
+    
+    .wrapper p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .words {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    
+    .words span {
+      margin: 5px;
+    }
+    
+    /* Estilos para os cards */
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .card {
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    
+    /* Estilos para os títulos dos cards */
+    
+    .card h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    /* Estilos para o texto dos cards */
+    
+    .card p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    /* Estilos responsivos */
+    
+    /* Tela pequena (até 600px de largura) */
+    @media screen and (max-width: 600px) {
+    
+      .search-box {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    
+      .wrapper p {
+        font-size: 18px;
+      }
+    
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    
+      .card {
+        margin-bottom: 20px;
+      }
+      .search-icon {
+        cursor: pointer;
+      }
+    
+      .search-box {
+        display: flex;
+        align-items: center;
+        background-color: #555;
+        padding: 5px;
+        margin-left: 10px;
+      }
+    
+      .search-box input[type="text"] {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+      }
     }
 
  }

@@ -19,11 +19,12 @@ body{
 }
 
 #photo-perfil{
+    width: 150px;
     display: flex;
     margin-top: 80px;
 }
 
-.profile-info h1{
+.profile-info{
     padding: 5px;
 }
 
@@ -159,4 +160,79 @@ p{
 p > a{
     font-weight: bold;
 }
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .campo input {
+        width: 100%;
+    }
+
+    .est label{
+        margin-left: 25px;
+    }
+
+    .est select {
+        margin-right: 25px;
+    }
+
+    .sexos input {
+        margin-left: 0;
+    }
+
+    .Finalizar button {
+        margin-left: 100px;
+    }
+}
+
+/* Estilos para telas menores que 480px */
+@media screen and (max-width: 480px) {
+    #photo-perfil {
+        margin-top: 40px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .campo input {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+
+    .est label {
+        margin-top: 10px;
+    }
+
+    .est select {
+        margin-right: 0;
+    }
+
+    .sexos {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .sexos input {
+        margin-left: 0;
+    }
+
+    .Finalizar button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
 

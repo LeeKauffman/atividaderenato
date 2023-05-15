@@ -8,10 +8,14 @@
 
 .container{
     display: flex;
+    padding-top: 80px;
     justify-content: center;
-    margin-top: 5%;
-    margin-right: 5%;
-    box-shadow: rgb(0, 0, 0, 0.2);
+    margin-top: 3%;
+    margin-left: 17%;
+    box-shadow: -5px 10px 10px 3px rgba(0, 0, 0, 0.1);
+    background-color:#f0faff;
+    border-radius: 20px;
+    width: 65%;
 }
 
 
@@ -19,12 +23,13 @@
     height: 600px;
     top: 50%;
     left: 50%;
-    transform: translate(-4%, -11%);
+    transform: translate(-10%, -11%);
 }
 
 .forms{
-    background: #083a77;
+    background: white;
     border-radius: 15px;
+    margin-right: 55px;
     box-shadow: -5px 10px 10px 3px rgba(0, 0, 0, 0.1);
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -44,7 +49,7 @@
 
 h1{
     color: white;
-    background-color: #4a98f762;
+    background-color: #4a98f7c2;
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     height: 40px;
@@ -56,7 +61,7 @@ h1{
 }
 
 label{
-    color: white;
+    color: #083a77;
 }
 
 select{
@@ -88,7 +93,7 @@ input{
     font-size: 0.9em;
     width: 150px;
     margin-top: 50px;
-    margin-left: 110px;
+    margin-left: 100px;
     border-radius: 5px;
     border: none;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -108,5 +113,51 @@ input{
 
 .form{
     padding: 10px;
+}
+@media screen and (max-width: 1574px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 3% auto;
+        width: 90%;
+    }
+
+    .image img {
+        height: auto;
+        width: 100%;
+        transform: none;
+    }
+
+    .forms {
+        width: 80%;
+        margin-right: 0;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .botao button {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
