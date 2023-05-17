@@ -22,27 +22,26 @@
 
 
     aside>p {
-      margin-top: 150px;
+      margin-top: 120px;
       text-align: center;
     }
 
     h2 {
-      text-align: center;
+      margin-left: 15%;
       margin-top: 3%;
       padding: 50px;
       color: #8495a5;
       font-size: 2.5em;
     }
 
+    .formula{
+      display: flex;
+      justify-content: center;
+    }
+
     #contact-form {
       max-width: 1208px;
       max-width: 75.5rem;
-      margin-left: 24%;
-    }
-
-    #contact {
-      margin-top: 5%;
-
     }
 
     #contact,
@@ -217,19 +216,21 @@
       <input type="text" placeholder="Pesquisar" />
     </div>
   </nav>
-  <section id="contact-form">
-    <h2>Entre em contato conosco</h2>
-    <form id="contact" name="contact" accept-charset="utf-8">
-      <label><span>Nome:</span><input name="name" type="text" placeholder="Nome" /></label>
-      <label><span>Email:</span><input name="email" type="email" placeholder="Email" /></label>
-      <label><span>Mensagem:</span><textarea name="message"
-          placeholder="Digite aqui a sua mensagem..."></textarea></label>
-      <input name="submit" type="submit" value="Enviar" />
-    </form>
-    <aside>
-      <p>Em caso de dúvidas ou reclamações sobre a plataforma, entre em contato conosco.</p>
-    </aside>
-  </section>
+    <div class="formula">
+      <section id="contact-form">
+        <h2>Entre em contato conosco</h2>
+        <form id="contact" name="contact" accept-charset="utf-8">
+          <label><span>Nome:</span><input name="name" type="text" placeholder="Nome" /></label>
+          <label><span>Email:</span><input name="email" type="email" placeholder="Email" /></label>
+          <label><span>Mensagem:</span><textarea name="message"
+              placeholder="Digite aqui a sua mensagem..."></textarea></label>
+          <input name="submit" type="submit" value="Enviar" />
+        </form>
+        <aside>
+          <p>Em caso de dúvidas ou reclamações sobre a plataforma, entre em contato conosco.</p>
+        </aside>
+      </section>
+    </div>
   <script>
     const nav = document.querySelector(".nav"),
         searchIcon = document.querySelector("#searchIcon"),

@@ -6,16 +6,20 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow: hidden;
+}
+
 .container{
     display: flex;
     padding-top: 80px;
     justify-content: center;
-    margin-top: 3%;
-    margin-left: 17%;
     box-shadow: -5px 10px 10px 3px rgba(0, 0, 0, 0.1);
     background-color:#f0faff;
     border-radius: 20px;
-    width: 65%;
+    width: 100vw;
+    height: 100vh;
+    
 }
 
 
@@ -35,7 +39,7 @@
     display: flex;
     justify-content: center;
     width: 30vw;
-    height: 50vh;
+    height: 63vh;
 }
 
 
@@ -57,7 +61,7 @@ h1{
     padding-bottom: 45px;
     text-align: center;
     margin-top: 55px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 label{
@@ -89,10 +93,11 @@ input{
 }
 
 .botao button{
+    display: block;
     padding: 15px;
     font-size: 0.9em;
     width: 150px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 100px;
     border-radius: 5px;
     border: none;
@@ -112,52 +117,6 @@ input{
 }
 
 .form{
+    display: block;
     padding: 10px;
 }
-@media screen and (max-width: 1574px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        margin: 3% auto;
-        width: 90%;
-    }
-
-    .image img {
-        height: auto;
-        width: 100%;
-        transform: none;
-    }
-
-    .forms {
-        width: 80%;
-        margin-right: 0;
-        margin-top: 30px;
-        height: auto;
-    }
-
-    h1 {
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-
-    input,
-    select {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 15px;
-    }
-
-    .botao button {
-        margin-left: 0;
-        margin-top: 30px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
-
